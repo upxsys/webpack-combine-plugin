@@ -1,16 +1,21 @@
-# client-js-webpack-plugin
-Puts multiple js libraries into one client.js file
+# webpack-combine-plugin
+Combine multiple assets into a single asset
 
 ## Usage
     
     // webpack.config.js
-    var clientJsWebpackPlugin = require('client-js-webpack-plugin'),
+    var webpackCombinePlugin = require('webpack-combine-plugin');
 
     module.exports = {
       entry: { ... },
       ...
       plugins: [
-           new clientJsWebpackPlugin(['jquery/dist/jquery.min.js', 'hammerjs/hammer.min.js', 'materialize-sass-origin/js/bin/materialize.min.js'])
+           new webpackCombinePlugin({
+               file: 'editor/client.js',
+               assets: [
+                   'common.js',
+                   'editor/client.js'
+               ]
+           })
       ]
-    
     }
