@@ -1,5 +1,5 @@
 function WebpackCombinePlugin(options) {
-    this.sources = options.sources;
+    this.assets = options.assets;
     this.file = options.file;
 }
 
