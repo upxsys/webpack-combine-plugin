@@ -1,6 +1,6 @@
 {
   "name": "webpack-combine-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Combine multiple assets into a single asset",
   "main": "index.js",
   "scripts": {
